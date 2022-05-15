@@ -954,7 +954,7 @@ done
 
 echo 'Criando arquivo de versão do Batocera.PLUS...'
 mv   "${TEMP_DIR}/squashfs-root/usr/share/batocera/batocera.version" "${TEMP_DIR}/squashfs-root/usr/share/batocera/recalbox.version"
-echo "${VERSION $(date +'%Y/%m/%d %H:%M')" >                         "${TEMP_DIR}/squashfs-root/usr/share/batocera/batocera.version"
+echo "$VERSION $(date +'%Y/%m/%d %H:%M')" >                         "${TEMP_DIR}/squashfs-root/usr/share/batocera/batocera.version"
 
 echo 'Adicionando versão BATOCERA.PLUS no ES'
 sed -i 's/BATOCERA.LINUX/BATOCERA.PLUS /' "${TEMP_DIR}/squashfs-root/usr/bin/emulationstation"
