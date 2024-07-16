@@ -12,6 +12,9 @@
 ## https://emulation.gametechwiki.com/index.php/Shader_caches
 
 ################################################################################
+### ALTERA A OPÇÃO DE MEMÓRIA
+
+sysctl -w vm.max_map_count=524288
 
 ### DIRECTORIES, FILES AND PARAMETERS
 
@@ -27,6 +30,7 @@ export XDG_CONFIG_HOME="${SAVE_DIR}"
 export PATH="${RYUJINX_DIR}/bin:${PATH}"
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 export DOTNET_EnableAlternateStackCheck=1
+export DOTNET_SYSTEM_GLOBALIZATION_PREDEFINED_CULTURES_ONLY=false
 
 ################################################################################
 
