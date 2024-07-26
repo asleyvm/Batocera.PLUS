@@ -385,8 +385,8 @@ URL_EXTERNAL_PKG=("${URL_EXTERNAL_PKG[@]}" "${URL_CEMUHOOK}")
 URL_RYUJINX='https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1359/ryujinx-1.1.1359-linux_x64.tar.gz' #Link provisório
 URL_EXTERNAL_PKG=("${URL_EXTERNAL_PKG[@]}" "${URL_RYUJINX}")
 
-URL_PCSX2='https://github.com/PCSX2/pcsx2/releases/download/v2.1.27/pcsx2-v2.1.27-linux-appimage-x64-Qt.AppImage'
-#URL_PCSX2='https://github.com/PCSX2/pcsx2/releases/download/v1.7.3411/pcsx2-v1.7.3411-linux-AppImage-64bit-wxWidgets.AppImage'
+#URL_PCSX2='https://github.com/PCSX2/pcsx2/releases/download/v2.1.27/pcsx2-v2.1.27-linux-appimage-x64-Qt.AppImage' ## erro na montagem do pacote
+URL_PCSX2='https://github.com/PCSX2/pcsx2/releases/download/v1.7.3411/pcsx2-v1.7.3411-linux-AppImage-64bit-wxWidgets.AppImage'
 URL_EXTERNAL_PKG=("${URL_EXTERNAL_PKG[@]}" "${URL_PCSX2}")
 
 URL_RPCS3='https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-0737c788fc8b8b33d79c620065c5fc4990dbed80/rpcs3-v0.0.24-14263-0737c788_linux64.AppImage'
