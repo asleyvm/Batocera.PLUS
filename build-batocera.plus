@@ -295,6 +295,7 @@ URL_BATOCERA_PLUS_PKG=(
     'https://github.com/AlexxandreFS/Batocera.PLUS-pkg/raw/main/xdriver_xf86-video-all-2.7z'
     'https://github.com/AlexxandreFS/Batocera.PLUS-pkg/raw/main/xfont_extras-1.7z'
     'https://github.com/AlexxandreFS/Batocera.PLUS-pkg/raw/main/libLLVM-13.0.0-1.7z'              # dep: mesa3d # remove on update
+    'https://github.com/asleyvm/Batocera.plus-PKG/raw/b10b2ae8635d6d73f801108618c5a82c604f5083/rdfind-1.4.7z'      # verificar arquivos duplicados
 )
 
 URL_BATOCERA_PLUS_DEV_PKG=(
@@ -966,6 +967,8 @@ mkdir -p  "${TEMP_DIR}/Batocera.PLUS/usr/share/hwdata"
 cp -a     "${DOWNLOAD_DIR}/${PKG_NAME}"      "${TEMP_DIR}/Batocera.PLUS/usr/share/pci.ids.gz"
 gunzip -k "${DOWNLOAD_DIR}/${PKG_NAME}" -c > "${TEMP_DIR}/Batocera.PLUS/usr/share/hwdata/pci.ids"
 ln -sf    '/usr/share/hwdata/pci.ids'        "${TEMP_DIR}/Batocera.PLUS/usr/share/pci.ids"
+
+
 
 ################################################################################
 
